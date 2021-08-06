@@ -13,8 +13,12 @@ const ForecastDetail = ({ date, temperature, humidity, wind }) => {
         <p>{`Max Temperature: ${temperature.max}°c`}</p>
         <p>{`Min Temperature: ${temperature.min}°c`}</p>
       </div>
-      <div className="forecast-detail__humidity">{`Humidity: ${humidity}%`}</div>
-      <div className="forecast-detail__wind">{`Wind: ${wind.speed}`}</div>
+      <div className="forecast-detail__humidity">
+        <p>{`Humidity: ${humidity}%`}</p>
+      </div>
+      <div className="forecast-detail__wind">
+        <p>{`Wind: ${wind.speed}`}</p>
+      </div>
     </div>
   );
 };

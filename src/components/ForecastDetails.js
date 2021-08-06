@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ForecastDetail from "./ForecastDetail";
+import "../styles/ForecastDetails.css";
 
 const ForecastDetails = ({ forecast }) => {
   return (
