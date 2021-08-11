@@ -6,13 +6,15 @@ import "../styles/ForecastDetails.css";
 const ForecastDetails = ({ forecast }) => {
   return (
     <div className="forecast-details">
-      <ForecastDetail
-        key={forecast.date}
-        date={forecast.date}
-        temperature={forecast.temperature}
-        humidity={forecast.humidity}
-        wind={forecast.wind}
-      />
+      {forecast && (
+        <ForecastDetail
+          key={forecast.date}
+          date={forecast.date}
+          temperature={forecast.temperature}
+          humidity={forecast.humidity}
+          wind={forecast.wind}
+        />
+      )}
     </div>
   );
 };
